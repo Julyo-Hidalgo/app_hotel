@@ -4,7 +4,16 @@
              x:Class="app_hotel.View.cadastro_hospedagem">
     <ContentPage.Content>
         <StackLayout BackgroundColor="Aqua">
-            <Picker/>
+
+            <Picker x:Name="pck_suite" Title="Escolha a Suíte:" HorizontalOptions="FillAndExpand">
+                <Picker.Items>
+                    <x:String>Luxo</x:String>
+                    <x:String>Executivo</x:String>
+                    <x:String>Probre</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Button x:Name="btn_calcular" Text="Calcular"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
