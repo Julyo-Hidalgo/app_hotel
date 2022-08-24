@@ -1,0 +1,16 @@
+D:\julyo\app_hotel\app_hotel\bin\Debug\netstandard2.0\app_hotel.deps.json
+D:\julyo\app_hotel\app_hotel\bin\Debug\netstandard2.0\app_hotel.dll
+D:\julyo\app_hotel\app_hotel\bin\Debug\netstandard2.0\app_hotel.pdb
+D:\julyo\app_hotel\app_hotel\obj\Debug\netstandard2.0\app_hotel.csproj.AssemblyReference.cache
+D:\julyo\app_hotel\app_hotel\obj\Debug\netstandard2.0\app_hotel.GeneratedMSBuildEditorConfig.editorconfig
+D:\julyo\app_hotel\app_hotel\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\julyo\app_hotel\app_hotel\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\julyo\app_hotel\app_hotel\obj\Debug\netstandard2.0\View\cadastro_hospedagem.xaml.g.cs
+D:\julyo\app_hotel\app_hotel\obj\Debug\netstandard2.0\app_hotel.AssemblyInfoInputs.cache
+D:\julyo\app_hotel\app_hotel\obj\Debug\netstandard2.0\app_hotel.AssemblyInfo.cs
+D:\julyo\app_hotel\app_hotel\obj\Debug\netstandard2.0\app_hotel.csproj.CoreCompileInputs.cache
+D:\julyo\app_hotel\app_hotel\obj\Debug\netstandard2.0\XamlC.stamp
+D:\julyo\app_hotel\app_hotel\obj\Debug\netstandard2.0\app_hotel.dll
+D:\julyo\app_hotel\app_hotel\obj\Debug\netstandard2.0\refint\app_hotel.dll
+D:\julyo\app_hotel\app_hotel\obj\Debug\netstandard2.0\app_hotel.pdb
+D:\julyo\app_hotel\app_hotel\obj\Debug\netstandard2.0\ref\app_hotel.dll
