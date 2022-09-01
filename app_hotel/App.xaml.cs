@@ -10,7 +10,7 @@ namespace app_hotel
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new View.cadastro_hospedagem();
         }
 
         protected override void OnStart()

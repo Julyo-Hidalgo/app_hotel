@@ -5,14 +5,32 @@
     <ContentPage.Content>
         <StackLayout BackgroundColor="Aqua">
 
-            <Picker x:Name="pck_suite" Title="Escolha a Suíte:" HorizontalOptions="FillAndExpand">
-                <Picker.Items>
-                    <x:String>Luxo</x:String>
-                    <x:String>Executivo</x:String>
-                    <x:String>Probre</x:String>
-                </Picker.Items>
-            </Picker>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
 
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <!--stepper dos adultos-->
+                <Label x:Name="lbl_qnt_adultos" BindingContext="{x:Reference stp_qnt_adultos}" Text="{Binding Value}" Grid.Row="1" Grid.Column="0"/>
+                <Stepper x:Name="stp_qnt_adultos" Grid.Row="1" Grid.Column="1" Minimum="0" Maximum="10" Increment="1"/>
+
+
+                <Label x:Name="lbl_qnt_anoes" BindingContext="{x:Reference stp_qnt_anoes}" Text="{Binding Value}" Grid.Row="2" Grid.Column="1"/>
+                <Stepper x:Name="stp_qnt_anoes" Grid.Row="2" Grid.Column="2" Minimum="0" Maximum="3" Increment="1"/>
+
+                <Picker />
+            </Grid>
+
+            
+            
             <Button x:Name="btn_calcular" Text="Calcular"/>
         </StackLayout>
     </ContentPage.Content>
