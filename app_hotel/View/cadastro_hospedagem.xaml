@@ -4,9 +4,15 @@
              x:Class="app_hotel.View.cadastro_hospedagem">
     <ContentPage.Content>
         <StackLayout BackgroundColor="Aqua">
-
+            <Label Text="Cadastro Hospedagem:" FontSize="Large" HorizontalOptions="Center"/>
             <Grid>
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
                     <RowDefinition Height="*"/>
@@ -19,19 +25,32 @@
                 </Grid.ColumnDefinitions>
 
                 <!--stepper dos adultos-->
+                <Label Text="Quantidade de Adultos:" Grid.ColumnSpan="2"/>
+
                 <Label x:Name="lbl_qnt_adultos" BindingContext="{x:Reference stp_qnt_adultos}" Text="{Binding Value}" Grid.Row="1" Grid.Column="0"/>
                 <Stepper x:Name="stp_qnt_adultos" Grid.Row="1" Grid.Column="1" Minimum="0" Maximum="10" Increment="1"/>
 
 
-                <Label x:Name="lbl_qnt_anoes" BindingContext="{x:Reference stp_qnt_anoes}" Text="{Binding Value}" Grid.Row="2" Grid.Column="1"/>
-                <Stepper x:Name="stp_qnt_anoes" Grid.Row="2" Grid.Column="2" Minimum="0" Maximum="3" Increment="1"/>
+                <!--stepper qnt criança-->
+                <Label Text="Quantidade de Criança:" Grid.Row="2" Grid.ColumnSpan="2"/>
 
-                <Picker />
+                <Label x:Name="lbl_qnt_anoes" BindingContext="{x:Reference stp_qnt_anoes}" Text="{Binding Value}" Grid.Row="3" Grid.Column="0"/>
+                <Stepper x:Name="stp_qnt_anoes" Grid.Row="3" Grid.Column="1" Minimum="0" Maximum="3" Increment="1"/>
+
+                <!--Picker Escolha quartos-->
+                <Picker x:Name="pck_quarto" Title="Escolha um tipo de suíte:" TitleColor="Black" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" ItemDisplayBinding="{ Binding descricao }"/>
+
+
+                <!--date picker check in-->
+                <Label x:Name="lbl_checkin" Grid.Row="7" Grid.ColumnSpan="2" Text="Check In:"/>
+                <DatePicker Grid.Row="8" Grid.ColumnSpan="2"/>
+    
+                <!--date picker check out-->
+                <Label x:Name="lbl_checkout" Grid.Row="9" Grid.ColumnSpan="2" Text="Check Out:"/>
+                <DatePicker Grid.Row="10" Grid.ColumnSpan="2"/>
             </Grid>
 
-            
-            
-            <Button x:Name="btn_calcular" Text="Calcular"/>
+            <Button x:Name="btn_calcular" Text="Calcular" Clicked="btn_calcular_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
